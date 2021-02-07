@@ -238,7 +238,7 @@ _submit.addEventListener('click', () => {
 const allChampions = [];
 const getAllChampions = async () => {
     if (allChampions.length > 0) return;
-    const response = await fetch('https://patpat1567.github.io/raid-data/champions-base-info.json');
+    const response = await fetch('https://patpat1567.github.io/RaidShadowLegendsData/champions-base-info.json');
     const champions = await response.json();
     const names = Object.keys(champions);
     for (const name of names) {
