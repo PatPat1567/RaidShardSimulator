@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>Raid Summoning Simulator</h1>
-    <hr>
+    <hr />
     <h2>Global settings</h2>
     <p>Settings (What are you pulling, during what type of event?)</p>
     <label>
@@ -68,7 +68,7 @@
         <input id="numShards" type="number" value="100">
     </label>
 
-    <hr>
+    <hr />
     <h2>Chance simulation</h2>
     <p>Pull the chosen number of the chosen shard type, many times to see in how many of the simulation you received champions with the given rarity</p>
     <label>
@@ -77,17 +77,26 @@
         <button type="button" id="submit">Simulate</button>
     </label>
 
-    <hr>
+    <hr />
     <h2>Champion pulls</h2>
     <p>Pull the chosen number of shards and see which champions you get</p>
     <div class="simulate-1-pull">
         <button type="button" id="simulate1">Simulate 1 pull</button> <label><input type="checkbox" id="sort"> Sort results</label>
     </div>
 
-    <hr>
+    <hr />
     <h2>Results</h2>
     <div class="chart-container"></div>
     <div class="results" id="results"></div>
+    <hr />
+    <div class="change-tracker">
+        <h2>Latest Changes</h2>
+        <p>Here is a list of the latest changes to the summoning simulator</p>
+        <h4>3/12/2021</h4>
+        <ol>
+            <li>Remove champions that are not able to be summoned using specific shards</li>
+        </ol>
+    </div>
     
 </body>
 </html>

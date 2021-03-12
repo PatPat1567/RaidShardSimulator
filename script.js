@@ -266,7 +266,9 @@ _simulate1.addEventListener('click', async () => {
         const poolChampions = allChampions.reduce((all, curr) => {
             if (tenchance.indexOf(curr.name) === -1) return [...all, curr];
             return [...all, ...new Array(10).fill(curr)];
-        }, []).filter((champion) => champion.rarity === rarity).filter((champion) => {
+        }, []).filter((champion) => champion.rarity === rarity)
+        .filter((champion) => champion.pullableShard.includes(shardType))
+        .filter((champion) => {
             if (shardType === 'void') return champion.affinity === 'void';
             return champion.affinity !== 'void';
         });
